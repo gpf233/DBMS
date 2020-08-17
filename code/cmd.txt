@@ -1,0 +1,3 @@
+bison -d a.y
+flex a.l
+gcc *.c -fexec-charset=gbk

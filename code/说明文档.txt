@@ -1,0 +1,13 @@
+环境：windows10。
+工具：flex，bison（UnxUtils中有，UnxUtils\usr\local\wbin\flex, UnxUtils\usr\local\wbin\bison)。
+a.exe为可执行文件。
+a.l为词法分析程序。
+lex.yy.c为flex处理a.l产生的词法分析程序。
+a.y为语法分析程序。
+a.tab.h和a.tab.c为bison处理a.y产生的头文件和c程序。
+share.h里边是定义的数据结构。
+func.h是制导函数的头文件。
+func.c是制导函数的实现代码。
+test.txt是测试语句，是王小兵老师给的测试语句，可以运行a.exe后把test.txt中的全部内容复制，粘贴到程序的输入流中。
+cmd.txt是编译指令，需要安装flex和bison。
+乱码问题的解决方法：1.用gcc编译时要加上-fexec-charset=gbk编译选项。2.也可以在命令行中chcp 65001后再在命令行中运行a.exe。3.用IDE编译。
